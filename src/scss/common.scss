@@ -1,1 +1,11 @@
 // Заголовки, общие БЄМ блоки и проче...
+/* H1 */
+h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(36);
+    //font-size: 36px;
+    //line-height: 41px;
+    line-height: math.div(36, 41);
+    color: #000;
+}

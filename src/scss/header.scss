@@ -1,5 +1,37 @@
 //====================================================================================================
+.header {
+}
+.header__top {
+	width: 100%;
+	height: 50px;
+	background: #f1f4fa;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 50px;
+	color: #65728b;
 
+	svg {
+		fill: #65728b;
+		height: rem(20);
+		padding-right: 0.8rem;
+	}
+	.header__container {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 50px;
+		display: flex;
+		justify-content: space-between;
+		.location,
+		.personal {
+			flex: 0 1 auto;
+		}
+		.working-time {
+		}
+	}
+}
+
+.header__bottom {
+}
 //====================================================================================================
 
 //Burger
