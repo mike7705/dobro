@@ -36,7 +36,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 
 // Брейк-поинты
 $pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
-//$tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
+$tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
 $mobile: em(767.98); // Телефоны L
 $mobileSmall: em(479.98); // Телефоны S
 
@@ -49,6 +49,7 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
+	//background-color: #e5e5e5;
 	// Скролл заблокирован
 	.lock & {
 		overflow: hidden;
@@ -91,6 +92,10 @@ body {
 		}
 		@if ($containerPadding>0) {
 			padding: 0 rem(math.div($containerPadding, 2));
+		} @else {
+			@include adaptiveValue("padding-left", 78, 16, 1440, 360);
+			@include adaptiveValue("padding-right", 78, 16, 1440, 360);
+			//padding: 0 ;
 		}
 	}
 } @else {
@@ -106,12 +111,15 @@ body {
 			}
 		}
 		@media (max-width: $pc) {
+			padding: 0 78px;
 			max-width: rem(970);
 		}
 		@media (max-width: $tablet) {
+			padding: 0 69px;
 			max-width: rem(750);
 		}
 		@media (max-width: $mobile) {
+			padding: 0 16px;
 			max-width: none;
 			@if ($containerPadding>0 and $maxWidthContainer>0) {
 				padding: 0 rem(math.div($containerPadding, 2));

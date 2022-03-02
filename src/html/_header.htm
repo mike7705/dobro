@@ -1,25 +1,138 @@
 <header class="header">
 	<div class="header__top">
 		<div class="header__container">
-			<div class="location">
-				<svg>
-					<use xlink:href="@img/icons/icons.svg#svg-location"></use>
-				</svg>
-				<span>г. Саранск, ул. Васенко, д.11, пом. 17</span>
-			</div>
-			<div class="working-time"></div>
-			<div class="personal">
-				<svg>
-					<use xlink:href="@img/icons/icons.svg#svg-personal"></use>
-				</svg>
-				<a href="#">Личный кабинет</a>
-			</div>
+			<div class="header__wrapper">
+				<div class="header__left">
+					<div class="location">
+						<svg width="33" height="20">
+							<use xlink:href="@img/icons/icons.svg#svg-location"></use>
+						</svg>
+						<span>г. Саранск, ул. Васенко, д.11, пом. 17</span>
+					</div>
+					<div class="working-time">
+						<svg width="31" height="20">
+							<use xlink:href="@img/icons/icons.svg#svg-clock"></use>
+						</svg>
+						<span>Пн-Пт 8<sup><u>00</u></sup> - 20<sup><u>00</u></sup>,</span>
+						<span>Сб 8<sup><u>00</u></sup> - 14<sup><u>00</u></sup>, Вс - выходной</span>
+					</div>
+				</div>
 
+				<div class="social">
+					<a href="#"><svg width="37" height="37">
+							<use xlink:href="@img/icons/icons.svg#svg-vk"></use>
+						</svg>
+					</a>
+					<svg width="37" height="37">
+						<use xlink:href="@img/icons/icons.svg#svg-ok"></use>
+					</svg>
+					<svg width="37" height="37">
+						<use xlink:href="@img/icons/icons.svg#svg-facebook"></use>
+					</svg>
+					<svg width="37" height="37">
+						<use xlink:href="@img/icons/icons.svg#svg-instagram"></use>
+					</svg>
+				</div>
+				<div class="spacer-0"></div>
+				<div class="personal">
+					<a href="#"><svg width="33" height="16" style="position: relative;">
+							<use xlink:href="@img/icons/icons.svg#svg-personal"></use>
+						</svg><span>Личный кабинет</span>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="header__bottom">
+	<div class="header__bottom ">
 		<div class="header__container">
+			<div class="header__wrapper">
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<div class="logo">
+					<a href="/" class="header__logo"><img class="_lazy" src="../img/logo.svg" alt=""></a>
+				</div>
+				<div class="spacer-1"></div>
+				<a href="#" class="button btn-aquamarine appointment">Записаться на прием</a>
+				<a href="#" class="button btn-bisque schedule ">Расписание врачей</a>
+				<a href="#" class="button btn-midnightblue calling-doctor">Вызов врача на дом</a>
+				<div class="spacer-2"></div>
+				<div class="header-phone">
+					<span>Запись по телефону:</span><br><a href="tel:+78342270001" class="phone">+7 (8342) 27-00-01</a>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="first">
+								<a href="#" class="menu__link">Услуги</a>
+								<span class="menu__arrow"></span>
+								<ul class="menu__sub-list">
+									<li>
+										<a href="#" class="menu__sub-link">Психиатрия</a>
+									</li>
+									<li>
+										<a href="" class="menu__sub-link">Психотерапия</a>
+									</li>
+									<li>
+										<a href="" class="menu__sub-link">Детская психология</a>
+									</li>
+									<li>
+										<a href="#" class="menu__sub-link">Наркология</a>
+									</li>
+									<li>
+										<a href="#" class="menu__sub-link">Стационар</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="menu__link">Врачи</a></li>
+							<li><a href="#" class="menu__link">Цены</a></li>
+							<li><a href="#" class="menu__link">Акции</a></li>
+							<li><a href="#" class="menu__link">Отзывы</a></li>
+							<li><a href="#" class="menu__link">Статьи</a></li>
+							<li><a href="#" class="menu__link">О клинике</a></li>
+							<li><a href="#" class="menu__link">Контакты</a>
+								<span class="menu__arrow"></span>
+								<ul class="menu__sub-list">
+									<li>
+										<a href="#" class="menu__sub-link">Психиатрия</a>
+									</li>
+									<li>
+										<a href="" class="menu__sub-link">Психотерапия</a>
+									</li>
+									<li>
+										<a href="" class="menu__sub-link">Детская психология</a>
+									</li>
+									<li>
+										<a href="#" class="menu__sub-link">Наркология</a>
+									</li>
+									<li>
+										<a href="#" class="menu__sub-link">Стационар</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="search">
+					<form action="" class="header__search">
+						<input autocomplete="off" type="search" name="form[]" data-error="Ошибка"
+							placeholder="Услуга, врач, вопрос" class="input search-input">
+						<button type="submit" class="search-button"><svg width="18" height="18">
+								<use xlink:href="@img/icons/icons.svg#svg-search"></use>
+							</svg></button>
+						<div class="cancel__icon"><span></span></div>
+					</form>
 
+					<div type="button" class="icon-search"><svg width="18" height="18">
+							<use xlink:href="@img/icons/icons.svg#svg-search"></use>
+						</svg>
+					</div>
+				</div>
+
+				<div class="spacer-3"></div>
+
+				<a href="#" class="icon-personal"><svg width="33" height="16" style="position: relative;">
+						<use xlink:href="@img/icons/icons.svg#svg-personal"></use>
+					</svg></a>
+			</div>
 		</div>
 	</div>
 </header>

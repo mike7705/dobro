@@ -3,7 +3,7 @@
 @import "base/forms/forms";
 
 // Стили попапов
-// @import "base/popup";
+@import "base/popup";
 
 // Стили спойлеров
 // @import "base/spollers";
@@ -15,13 +15,13 @@
 // @import "base/maps";
 
 // Стили блока "показать еще"
-// @import "base/showmore";
+@import "base/showmore";
 
 // Стили для полноэкранного блока
 // @import "base/fullscreen";
 
 // Стили для липкого блока
-// @import "base/sticky";
+@import "base/sticky";
 
 // Стили для отзывчивых картинок (IBG)
 // Сниппет (HTML): ibg (div c картинкой и классами)

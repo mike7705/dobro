@@ -9,3 +9,83 @@ h1 {
     line-height: math.div(36, 41);
     color: #000;
 }
+
+a:hover {
+    text-decoration-line: underline;
+    color: #0d0d5d;
+}
+//* Buttons ==========================================//
+
+[class^="btn-"],
+[class*=" btn-"] {
+    display: block;
+    padding: rem(14) rem(12);
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: rem(20);
+    border-radius: 8px;
+    color: #0d0d5d;
+    border: 1px solid;
+    white-space: nowrap;
+    text-align: center;
+}
+[class^="btn-"]:hover,
+[class*=" btn-"]:hover {
+    text-decoration: none;
+}
+@media (min-width: $tablet) {
+    [class^="btn-"],
+    [class*=" btn-"] {
+        margin-right: rem(20);
+    }
+}
+@media (max-width: $tablet) {
+    [class^="btn-"],
+    [class*=" btn-"] {
+        margin-right: rem(10);
+    }
+}
+.me-0[class^="btn-"],
+.me-0[class*=" btn-"] {
+    margin-right: 0 !important;
+}
+.btn-aquamarine {
+    background-color: #99e1d2;
+    border-color: #99e1d2;
+}
+.btn-aquamarine:hover {
+    filter: drop-shadow(0px 14px 14px rgba(153, 225, 210, 0.24));
+}
+.btn-bisque {
+    background-color: #fce5cd;
+    border-color: #fce5cd;
+}
+.btn-bisque:hover {
+    filter: drop-shadow(0px 14px 14px rgba(252, 229, 205, 0.45));
+}
+.btn-midnightblue {
+    background-color: #0d0d5d;
+    border-color: #0d0d5d;
+    color: white;
+}
+.btn-midnightblue:hover {
+    color: #fff;
+    filter: drop-shadow(0px 10px 14px rgba(13, 13, 93, 0.3));
+}
+.btn-white {
+    background-color: white;
+    border-color: #65728b;
+}
+.btn-white:hover {
+    border-color: #0d0d5d;
+}
+.big[class^="btn-"],
+.big[class*=" btn-"] {
+    display: block;
+    padding: rem(18) rem(60);
+    font-size: rem(16);
+    line-height: rem(24);
+}
+.big:hover {
+    filter: drop-shadow(0px 10px 14px rgba(13, 13, 93, 0.3));
+}
