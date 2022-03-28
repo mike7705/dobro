@@ -7,13 +7,1155 @@
 <body>
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
-		<main class="page">
-			<div class="main__container">
-				<a href="" class="header__logo"><img data-src="../img/logo.svg" alt=""></a>
+		<banner class="page">
+			<div class="banner__container">
+				<div class="banner__wrapper">
+					<div class="banner__text">
+						<span>Быстрое выведение из запоя</span>
+						<a href="#" class="button btn-white">Узнать больше</a>
+					</div>
+
+					<img data-src="@img/banner1.jpg" alt="">
+
+				</div>
 
 			</div>
-		</main>
-		@@include('html/_footer.htm',{})
+		</banner>
+		<section class="page banners">
+			<div class="banners__container">
+				<!-- Оболочка слайдера -->
+				<div class="banners__slider swiper">
+					<!-- Двигающееся часть слайдера -->
+					<div class="banners__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="banners__slide swiper-slide" style="
+								background-image: linear-gradient(90deg, #C3CFDD 44.92%, rgba(240, 245, 250, 0) 102.23%),url('@img/banners1.jpg') ;
+								background-repeat: no-repeat,no-repeat;
+								background-size: 100%,cover ;
+								background-position: left center,center center;
+							">
+							<div class="banner__text">
+								<span>Лечение игровой и алкогольной зависимости</span>
+								<a href="#" class="button btn-white">Подробнее</a>
+							</div>
+
+						</div>
+						<div class="banners__slide swiper-slide" style="
+								background-image: linear-gradient(90deg, #C3CFDD 44.92%, rgba(240, 245, 250, 0) 102.23%),url('@img/banners2.jpg') ;
+								background-repeat: no-repeat,no-repeat;
+								background-size: 100%,cover ;
+								background-position: left center,center center;
+							">
+							<div class="banner__text">
+								<span>Лечение игровой и алкогольной зависимости</span>
+								<a href="#" class="button btn-white">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<!-- Если нужна навигация (влево/вправо) -->
+					<button type="button" class="swiper-button-prev carousel-prev"><svg width="24" height="24">
+							<use xlink:href="@img/icons/icons.svg#svg-c-left"></use>
+						</svg></button>
+					<button type="button" class="swiper-button-next carousel-next"><svg width="24" height="24">
+							<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+						</svg></button>
+				</div>
+			</div>
+		</section>
+		<section class="page">
+			<div class="services__container">
+				<h1>Наши услуги</h1>
+				<div class="services__wrapper">
+					<div class="service__item">
+						<div class="service__item-wrapper">
+							<div class="title">
+								<svg width="37" height="37">
+									<use xlink:href="@img/icons/icons.svg#svg-psychiatry"></use>
+								</svg>
+								<a href="#" class="h3" lang="ru" data-tippy-content="Психиатрия">Психиатрия
+
+								</a>
+
+							</div>
+							<ul>
+								<li><a href="#">Психиатр/психиатрия</a></li>
+								<li><a href="#">Консультация психиатра</a></li>
+								<li><a href="#">Лечение в стационаре</a></li>
+								<li><a href="#">Выезд на дом</a></li>
+								<li><a href="#">Психические расстройства</a></li>
+							</ul>
+							<div class="item-footer">
+								<a href="#" class="to-all-services">
+									Все услуги
+									<svg width="24" height="24">
+										<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="service__item-wrapper">
+							<div class="title">
+								<svg width="37" height="37">
+									<use xlink:href="@img/icons/icons.svg#svg-psychotherapy"></use>
+								</svg>
+								<a href="#" class="h3" lang="ru">Психотерапия
+								</a>
+							</div>
+							<ul>
+								<li><a href="#">Психотерапия, психолог</a></li>
+								<li><a href="#">Консультация психотерапевта</a></li>
+								<li><a href="#">Консультация психолога</a></li>
+								<li><a href="#">Семейная психотерапия</a></li>
+								<li><a href="#">Проблема детско-родительских отношений
+									</a></li>
+							</ul>
+							<div class="item-footer">
+								<a href="#" class="to-all-services">
+									Все услуги
+									<svg width="24" height="24">
+										<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="service__item-wrapper">
+							<div class="title">
+								<svg width="37" height="37">
+									<use xlink:href="@img/icons/icons.svg#svg-child-psychology"></use>
+								</svg>
+								<a href="#" class="h3" lang="ru">Детская
+									психология
+								</a>
+							</div>
+							<ul>
+								<li><a href="#">Детская психология</a></li>
+								<li><a href="#">Консультация детского психолога</a></li>
+								<li><a href="#">Лечение аутизма</a></li>
+								<li><a href="#">Лечение детской шизофрении</a></li>
+								<li><a href="#">Лечение синдрома Аспергера</a></li>
+							</ul>
+							<div class="item-footer">
+								<a href="#" class="to-all-services">
+									Все услуги
+									<svg width="24" height="24">
+										<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="service__item-wrapper">
+							<div class="title">
+								<svg width="37" height="37">
+									<use xlink:href="@img/icons/icons.svg#svg-narcology"></use>
+								</svg>
+								<a href="#" class="h3" lang="ru">Наркология
+								</a>
+							</div>
+							<ul>
+								<li><a href="#">Наркология</a></li>
+								<li><a href="#">Консультация нарколога</a></li>
+								<li><a href="#">Алкоголизм</a></li>
+								<li><a href="#">Лечение алкоголизма</a></li>
+								<li><a href="#">Кодирование</a></li>
+							</ul>
+							<div class="item-footer">
+								<a href="#" class="to-all-services">
+									Все услуги
+									<svg width="24" height="24">
+										<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="service__item-wrapper">
+							<div class="title">
+								<svg width="37" height="37">
+									<use xlink:href="@img/icons/icons.svg#svg-reflex"></use>
+								</svg>
+								<a href="#" class="h3" lang="ru" data-tippy-content="Рефлексотерапия">Рефлексотерапия
+								</a>
+							</div>
+							<ul>
+								<li><a href="#">Рефлексотерапия</a></li>
+								<li><a href="#">Консультация рефлексотерапевта</a></li>
+								<li><a href="#">Нарушение сна</a></li>
+								<li><a href="#">Головная боль, мигрени</a></li>
+								<li><a href="#">Лечение хронической боли</a></li>
+							</ul>
+							<div class="item-footer">
+								<a href="#" class="to-all-services">
+									Все услуги
+									<svg width="24" height="24">
+										<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="service__item-wrapper">
+							<div class="title">
+								<svg width="37" height="37">
+									<use xlink:href="@img/icons/icons.svg#svg-diagnostic"></use>
+								</svg>
+								<a href="#" class="h3" lang="ru" data-tippy-content="Функциональная
+									диагностика">Функциональная
+									<br>диагностика
+								</a>
+							</div>
+							<ul>
+								<li><a href="#">Функциональная диагностика</a></li>
+								<li><a href="#">Электрокардиграфия</a></li>
+								<li><a href="#">Электроэнцефалография</a></li>
+							</ul>
+							<div class="item-footer">
+								<a href="#" class="to-all-services">
+									Все услуги
+									<svg width="24" height="24">
+										<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="service__item-wrapper">
+							<div class="title">
+								<svg width="37" height="37">
+									<use xlink:href="@img/icons/icons.svg#svg-hospital"></use>
+								</svg>
+								<a href="#" class="h3" lang="ru">
+									Стационар
+								</a>
+							</div>
+							<ul>
+								<li><a href="#">Лечение в стационаре</a></li>
+								<li><a href="#">Психиатрический стационар</a></li>
+								<li><a href="#">Наркологический стационар</a></li>
+							</ul>
+							<div class="item-footer">
+								<a href="#" class="to-all-services">
+									Все услуги
+									<svg width="24" height="24">
+										<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="service__item-wrapper">
+							<div class="title">
+								<svg width="37" height="37">
+									<use xlink:href="@img/icons/icons.svg#svg-help-at-home"></use>
+								</svg>
+								<a href="#" class="h3" lang="ru">
+									Помощь на дому
+								</a>
+							</div>
+							<ul>
+								<li><a href="#">Доставка до клиники</a></li>
+								<li><a href="#">Консультация нарколога, психиатра, психолога на дому</a></li>
+								<li><a href="#">Контроль состояния после лечения в стационаре</a></li>
+							</ul>
+							<div class="item-footer">
+								<a href="#" class="to-all-services">
+									Все услуги
+									<svg width="24" height="24">
+										<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="button btn-aquamarine btn-100 h5">Все услуги</a>
+			</div>
+		</section>
+		<section class="page">
+			<div class="features__container">
+				<h1>Наши преимущества</h1>
+				<p class="h5">Мы по праву считаемся одной из самых технологичных клиник Москвы</p>
+				<div class="features__wrapper">
+					<div class="feature__item">
+						<div class="feature__icon">
+							<svg width="" height="">
+								<use xlink:href="@img/icons/icons.svg#svg-anonymous"></use>
+							</svg>
+						</div>
+						<div class="feature__text">
+							<div class="feature__header h3">Анонимность обращения</div>
+							<div class="feature__description h5">
+								Гарантируем пациенту полную анонимность обращения!
+							</div>
+						</div>
+					</div>
+					<div class="feature__item">
+						<div class="feature__icon">
+							<svg width="" height="">
+								<use xlink:href="@img/icons/icons.svg#svg-24h-doctor"></use>
+							</svg>
+						</div>
+						<div class="feature__text">
+							<div class="feature__header h3">Круглосуточный врач</div>
+							<div class="feature__description h5">
+								В клинике постоянно дежурит врач,
+								который готов в любое время суток оказывать помощь
+							</div>
+						</div>
+					</div>
+					<div class="feature__item">
+						<div class="feature__icon">
+							<svg width="" height="">
+								<use xlink:href="@img/icons/icons.svg#svg-modern-clinic"></use>
+							</svg>
+						</div>
+						<div class="feature__text">
+							<div class="feature__header h3">Современная клиника</div>
+							<div class="feature__description h5">
+								Современное оборудование, высокая квалиикация медицинских работников центра наркологии
+							</div>
+						</div>
+					</div>
+					<div class="feature__item">
+						<div class="feature__icon">
+							<svg width="" height="">
+								<use xlink:href="@img/icons/icons.svg#svg-no-alcohol"></use>
+							</svg>
+						</div>
+						<div class="feature__text">
+							<div class="feature__header h3">Нет доступа к алкоголю</div>
+							<div class="feature__description h5">
+								В стационарных условиях нет доступа к накротикам или алкоголю, а сам больной огражден от
+								сомнительного окружения
+							</div>
+						</div>
+					</div>
+					<div class="feature__item">
+						<div class="feature__icon">
+							<svg width="" height="">
+								<use xlink:href="@img/icons/icons.svg#svg-comfort-ward"></use>
+							</svg>
+						</div>
+						<div class="feature__text">
+							<div class="feature__header h3">Комфортные палаты</div>
+							<div class="feature__description h5">
+								Палаты оборудованы современной техникой и мебелью
+							</div>
+						</div>
+					</div>
+					<div class="feature__item">
+						<div class="feature__icon">
+							<svg width="" height="">
+								<use xlink:href="@img/icons/icons.svg#svg-full-examination"></use>
+							</svg>
+						</div>
+						<div class="feature__text">
+							<div class="feature__header h3">Комплексное обследование</div>
+							<div class="feature__description h5">
+								Комплексная диагностика и лечение различных патологий в клинике
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page about">
+			<div class="about__container">
+				<div class="about__inner">
+
+					<div class="about__gallery">
+						<div class="ratio ratio-9x10">
+							<div class="">
+								<!-- Оболочка слайдера -->
+								<div class="about__slider swiper">
+									<!-- Двигающееся часть слайдера -->
+									<div class="about__wrapper swiper-wrapper">
+										<!-- Слайд -->
+										<div class="about__slide swiper-slide">
+											<img src="@img/5YASD86sa7dtfOUYAF.jpg" alt="О клинике">
+										</div>
+										<div class="about__slide swiper-slide">
+											<img src="@img/picture-845h.jpg" alt="О клинике">
+										</div>
+										<div class="about__slide swiper-slide">
+											<img src="@img/225b-5827-47fd-ae2c-0da086fea665.jpg" alt="О клинике">
+										</div>
+										<div class="about__slide swiper-slide">
+											<img src="@img/60ed-dd3c-4061-bf51-662562675ef7.jpg" alt="О клинике">
+										</div>
+										<div class="about__slide swiper-slide">
+											<img data-src="@img/XXXL.jpg" alt="О клинике">
+										</div>
+									</div>
+									<!-- Если нужна пагинация -->
+									<div class="swiper-pagination about-pagination"></div>
+									<div class="pagination-background"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="about__text">
+						<h1>О клинике</h1>
+						<h5>В нашу компетенцию входит весь спектр наркологической и психологической помощи по стандартам
+							медицинской помощи в РФ </h5>
+						<p>Вот пример статьи на 1000 символов. Это достаточно маленький текст, оптимально подходящий для
+							карточек товаров в интернет-магазинах или для небольших информационных публикаций. В таком
+							тексте редко бывает более 2-3 абзацев и обычно один подзаголовок. Но можно и без него. На
+							1000 символов рекомендовано использовать 1-2 ключа и одну картину.
+							Текст на 1000 символов – это сколько примерно слов? Статистика Word показывает, что «тысяча»
+							включает в себя 150-200 слов средней </p>
+						<p>В копирайтерской деятельности принято считать «тысячи» с пробелами или без.
+							Учет пробелов увеличивает объем текста примерно на 100-200 символов – именно столько раз мы
+							разделяем слова свободным пространством. Считать пробелы заказчики не любят, так как это
+							«пустое место». Однако некоторые фирмы и биржи видят справедливым ставить стоимость за 1000
+							символов с пробелами, считая последние важным элементом качественного восприятия.
+							Согласитесь, читать слитный текст без единого пропуска, никто не будет. Но большинству нужна
+							цена за 1000 знаков без пробелов.</p>
+						<div class="more">
+							<a href="" class="button btn-white">Подробнее</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="page promo">
+			<div class="promo__container">
+
+				<div class="promo__inner">
+					<h1>Акции</h1>
+					<!-- Оболочка слайдера -->
+					<div class="promo__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="promo__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="promo__slide swiper-slide">
+								<div class="promo-image">
+									<a href="#">
+										<img data-src="@img/promo1.jpg" alt="Название акции">
+									</a>
+								</div>
+
+								<div class="promo-body">
+									<div class="promo-date">c 10.2021 по 01.2022</div>
+									<a href="#" class="promo-header">
+										<h5>Подарок в День Рождения!</h5>
+									</a>
+									<p class="text2">Клиника желает вам крепкого здоровья и дарит 1000 руб. на
+										депозитный счет</p>
+								</div>
+
+							</div>
+							<!-- Слайд -->
+							<div class="promo__slide swiper-slide">
+								<div class="promo-image">
+									<a href="#">
+										<img data-src="@img/promo2.jpg" alt="Название акции">
+									</a>
+								</div>
+								<div class="promo-body">
+									<div class="promo-date">c 10.2021 по 01.2022</div>
+									<a href="#">
+										<h5 class="promo-header">Набор группы для тех, кто "любит" потревожиться
+										</h5>
+									</a>
+									<p class="text2">Клиника желает вам крепкого здоровья...</p>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="promo__slide swiper-slide">
+								<div class="promo-image">
+									<a href="#">
+										<img data-src="@img/promo3.jpg" alt="Название акции">
+									</a>
+								</div>
+								<div class="promo-body">
+									<div class="promo-date">c 10.2021 по 01.2022</div>
+									<a href="#">
+										<h5 class="promo-header">Подарок в День Рождения!</h5>
+									</a>
+									<p class="text2">Клиника желает вам крепкого здоровья и дарит 1000 руб. на
+										депозитный счет</p>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="promo__slide swiper-slide">
+								<div class="promo-image">
+									<a href="#">
+										<img data-src="@img/promo2.jpg" alt="Название акции">
+									</a>
+								</div>
+								<div class="promo-body">
+									<div class="promo-date">c 10.2021 по 01.2022</div>
+									<a href="#">
+										<h5 class="promo-header">Подарок в День Рождения!</h5>
+									</a>
+									<p class="text2">Клиника желает вам крепкого здоровья и дарит 1000 руб. на
+										депозитный счет</p>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination promo-pagination"></div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-prev carousel-prev">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-left"></use>
+							</svg>
+						</button>
+						<button type="button" class="swiper-button-next carousel-next">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page video">
+			<div class="video__container">
+				<div class="video__inner">
+					<h1>Видео</h1>
+					<!-- Оболочка слайдера -->
+					<div class="video__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="video__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="video__slide swiper-slide ">
+								<div class="video-thumb gallery" data-gallery="video">
+									<a href="#" class="gallery__image" data-lg-size="1280-720"
+										data-src="//www.youtube.com/watch?v=egyIeygdS_E"
+										data-poster="https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg"
+										data-sub-html="">
+										<img src="@img/video1.jpg" alt="Название видео">
+									</a>
+								</div>
+								<div class="video-description">
+									<h5>Медицинский центр поздравляет
+										всех с наступающим Новым Годом</h5>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="video__slide swiper-slide ">
+								<div class="video-thumb gallery" data-gallery="video">
+									<a href="#" class="gallery__image" data-lg-size="1280-720"
+										data-src="//www.youtube.com/watch?v=egyIeygdS_E"
+										data-poster="https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg"
+										data-sub-html="">
+										<img data-src="@img/video1.jpg" alt="Название видео">
+									</a>
+								</div>
+								<div class="video-description">
+									<h5>Медицинский центр поздравляет
+										всех с наступающим Новым Годом</h5>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="video__slide swiper-slide ">
+								<div class="video-thumb gallery" data-gallery="video">
+									<a href="#" class="gallery__image" data-lg-size="1280-720"
+										data-src="//www.youtube.com/watch?v=egyIeygdS_E"
+										data-poster="https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg"
+										data-sub-html="">
+										<img data-src="@img/video1.jpg" alt="Название видео">
+									</a>
+								</div>
+								<div class="video-description">
+									<h5>Медицинский центр поздравляет
+										всех с наступающим Новым Годом</h5>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="video__slide swiper-slide ">
+								<div class="video-thumb gallery" data-gallery="video">
+									<a href="#" class="gallery__image" data-lg-size="1280-720"
+										data-src="//www.youtube.com/watch?v=egyIeygdS_E"
+										data-poster="https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg"
+										data-sub-html="">
+										<img data-src="@img/video1.jpg" alt="Название видео">
+									</a>
+								</div>
+								<div class="video-description">
+									<h5>Медицинский центр поздравляет
+										всех с наступающим Новым Годом</h5>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination video-pagination"></div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-prev carousel-prev">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-left"></use>
+							</svg>
+						</button>
+						<button type="button" class="swiper-button-next carousel-next">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page doctors">
+			<div class="doctors__container">
+				<div class="doctors__inner">
+					<h1>Наши специалисты</h1>
+					<!-- Оболочка слайдера -->
+					<div class="doctors__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="doctors__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="doctor__slide swiper-slide">
+								<div class="doctor-image">
+									<img data-src="@img/doctor1.jpg" alt="ФИО доктора">
+									<div class="doctor-social">
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-vk"></use>
+											</svg>
+										</a>
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-instagram"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="doctor-body">
+									<div class="doctor-reviews">12 отзывов</div>
+									<h4 class="doctor-name">Макарычева
+										Ольга Владимировна</h4>
+									<p class="text2">Психиатр, психотерапевт,
+										детский теравпевт</p>
+									<a href="#" class="button btn-midnightblue"
+										data-popup="#popup__appointment">Записаться на прием</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="doctor__slide swiper-slide">
+								<div class="doctor-image">
+									<img data-src="@img/doctor2.jpg" alt="ФИО доктора">
+									<div class="doctor-social">
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-vk"></use>
+											</svg>
+										</a>
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-instagram"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="doctor-body">
+									<div class="doctor-reviews">54 отзыва</div>
+									<h4 class="doctor-name">Самылин
+										Вадим Георгиевич</h4>
+									<p class="text2">Психиатр-Нарколог</p>
+									<a href="#" class="button btn-midnightblue"
+										data-popup="#popup__appointment">Записаться на прием</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="doctor__slide swiper-slide">
+								<div class="doctor-image">
+									<img data-src="@img/doctor3.jpg" alt="ФИО доктора">
+									<div class="doctor-social">
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-vk"></use>
+											</svg>
+										</a>
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-instagram"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="doctor-body">
+									<div class="doctor-reviews">46 отзывов</div>
+									<h4 class="doctor-name">Сахарова
+										Татьяна Валерьевна</h4>
+									<p class="text2">Психиатр, психотерапевт</p>
+									<a href="#" class="button btn-midnightblue"
+										data-popup="#popup__appointment">Записаться на прием</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="doctor__slide swiper-slide">
+								<div class="doctor-image">
+									<img data-src="@img/doctor1.jpg" alt="ФИО доктора">
+									<div class="doctor-social">
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-vk"></use>
+											</svg>
+										</a>
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-instagram"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="doctor-body">
+									<div class="doctor-reviews">18 отзывов</div>
+									<h4 class="doctor-name">Миндрова
+										Наталья Михайловна</h4>
+									<p class="text2">Психиатр, психотерапевт</p>
+									<a href="#" class="button btn-midnightblue"
+										data-popup="#popup__appointment">Записаться на прием</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="doctor__slide swiper-slide">
+								<div class="doctor-image">
+									<img data-src="@img/doctor1.jpg" alt="ФИО доктора">
+									<div class="doctor-social">
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-vk"></use>
+											</svg>
+										</a>
+										<a href="#" class="button">
+											<svg width="40" height="40">
+												<use xlink:href="@img/icons/icons.svg#svg-white-instagram"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="doctor-body">
+									<div class="doctor-reviews">12 отзывов</div>
+									<h4 class="doctor-name">Макарычева
+										Ольга Владимировна</h4>
+									<p class="text2">Психиатр, психотерапевт,
+										детский теравпевт</p>
+									<a href="#" class="button btn-midnightblue"
+										data-popup="#popup__appointment">Записаться на прием</a>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination doctors-pagination"></div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-prev carousel-prev">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-left"></use>
+							</svg>
+						</button>
+						<button type="button" class="swiper-button-next carousel-next">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+							</svg>
+						</button>
+						<!-- Если нужен скролбар -->
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews page">
+			<div class="reviews__container">
+				<div class="reviews__inner">
+					<h1>Отзывы</h1>
+					<!-- Оболочка слайдера -->
+					<div class="reviews__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="reviews__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="review__slide swiper-slide">
+								<div class="raiting">
+									<svg width="116" height="20" viewBox="0 0 116 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M18.2891 7.64918C18.2368 7.4949 18.1404 7.35934 18.0118 7.25923C17.8833 7.15912 17.7282 7.09884 17.5658 7.08584L12.815 6.70834L10.7591 2.15751C10.6937 2.01094 10.5872 1.88645 10.4525 1.79906C10.3179 1.71167 10.1608 1.66513 10.0003 1.66504C9.83972 1.66495 9.68259 1.71132 9.54784 1.79856C9.41308 1.8858 9.30645 2.01018 9.24081 2.15668L7.18498 6.70834L2.43415 7.08584C2.27453 7.09849 2.12193 7.15685 1.99461 7.25395C1.86729 7.35105 1.77064 7.48278 1.71623 7.63337C1.66181 7.78396 1.65193 7.94704 1.68777 8.1031C1.72361 8.25916 1.80365 8.40158 1.91831 8.51334L5.42915 11.9358L4.18748 17.3125C4.14978 17.4753 4.16186 17.6456 4.22216 17.8014C4.28247 17.9572 4.3882 18.0913 4.52565 18.1862C4.6631 18.2812 4.82591 18.3326 4.99297 18.3339C5.16002 18.3352 5.3236 18.2862 5.46248 18.1933L9.99998 15.1683L14.5375 18.1933C14.6794 18.2876 14.8468 18.3361 15.0172 18.3324C15.1875 18.3286 15.3526 18.2728 15.4903 18.1724C15.628 18.0721 15.7316 17.9319 15.7873 17.7709C15.8429 17.6099 15.848 17.4356 15.8016 17.2717L14.2775 11.9383L18.0575 8.53668C18.305 8.31334 18.3958 7.96501 18.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M42.2891 7.64918C42.2368 7.4949 42.1404 7.35934 42.0118 7.25923C41.8833 7.15912 41.7282 7.09884 41.5658 7.08584L36.815 6.70834L34.7591 2.15751C34.6937 2.01094 34.5872 1.88645 34.4525 1.79906C34.3179 1.71167 34.1608 1.66513 34.0003 1.66504C33.8397 1.66495 33.6826 1.71132 33.5478 1.79856C33.4131 1.8858 33.3064 2.01018 33.2408 2.15668L31.185 6.70834L26.4341 7.08584C26.2745 7.09849 26.1219 7.15685 25.9946 7.25395C25.8673 7.35105 25.7706 7.48278 25.7162 7.63337C25.6618 7.78396 25.6519 7.94704 25.6878 8.1031C25.7236 8.25916 25.8036 8.40158 25.9183 8.51334L29.4291 11.9358L28.1875 17.3125C28.1498 17.4753 28.1619 17.6456 28.2222 17.8014C28.2825 17.9572 28.3882 18.0913 28.5256 18.1862C28.6631 18.2812 28.8259 18.3326 28.993 18.3339C29.16 18.3352 29.3236 18.2862 29.4625 18.1933L34 15.1683L38.5375 18.1933C38.6794 18.2876 38.8468 18.3361 39.0172 18.3324C39.1875 18.3286 39.3526 18.2728 39.4903 18.1724C39.628 18.0721 39.7316 17.9319 39.7873 17.7709C39.8429 17.6099 39.848 17.4356 39.8016 17.2717L38.2775 11.9383L42.0575 8.53668C42.305 8.31334 42.3958 7.96501 42.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M66.2891 7.64918C66.2368 7.4949 66.1404 7.35934 66.0118 7.25923C65.8833 7.15912 65.7282 7.09884 65.5658 7.08584L60.815 6.70834L58.7591 2.15751C58.6937 2.01094 58.5872 1.88645 58.4525 1.79906C58.3179 1.71167 58.1608 1.66513 58.0003 1.66504C57.8397 1.66495 57.6826 1.71132 57.5478 1.79856C57.4131 1.8858 57.3064 2.01018 57.2408 2.15668L55.185 6.70834L50.4341 7.08584C50.2745 7.09849 50.1219 7.15685 49.9946 7.25395C49.8673 7.35105 49.7706 7.48278 49.7162 7.63337C49.6618 7.78396 49.6519 7.94704 49.6878 8.1031C49.7236 8.25916 49.8036 8.40158 49.9183 8.51334L53.4291 11.9358L52.1875 17.3125C52.1498 17.4753 52.1619 17.6456 52.2222 17.8014C52.2825 17.9572 52.3882 18.0913 52.5256 18.1862C52.6631 18.2812 52.8259 18.3326 52.993 18.3339C53.16 18.3352 53.3236 18.2862 53.4625 18.1933L58 15.1683L62.5375 18.1933C62.6794 18.2876 62.8468 18.3361 63.0172 18.3324C63.1875 18.3286 63.3526 18.2728 63.4903 18.1724C63.628 18.0721 63.7316 17.9319 63.7873 17.7709C63.8429 17.6099 63.848 17.4356 63.8016 17.2717L62.2775 11.9383L66.0575 8.53668C66.305 8.31334 66.3958 7.96501 66.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M90.2891 7.64918C90.2368 7.4949 90.1404 7.35934 90.0118 7.25923C89.8833 7.15912 89.7282 7.09884 89.5658 7.08584L84.815 6.70834L82.7591 2.15751C82.6937 2.01094 82.5872 1.88645 82.4525 1.79906C82.3179 1.71167 82.1608 1.66513 82.0003 1.66504C81.8397 1.66495 81.6826 1.71132 81.5478 1.79856C81.4131 1.8858 81.3064 2.01018 81.2408 2.15668L79.185 6.70834L74.4341 7.08584C74.2745 7.09849 74.1219 7.15685 73.9946 7.25395C73.8673 7.35105 73.7706 7.48278 73.7162 7.63337C73.6618 7.78396 73.6519 7.94704 73.6878 8.1031C73.7236 8.25916 73.8036 8.40158 73.9183 8.51334L77.4291 11.9358L76.1875 17.3125C76.1498 17.4753 76.1619 17.6456 76.2222 17.8014C76.2825 17.9572 76.3882 18.0913 76.5256 18.1862C76.6631 18.2812 76.8259 18.3326 76.993 18.3339C77.16 18.3352 77.3236 18.2862 77.4625 18.1933L82 15.1683L86.5375 18.1933C86.6794 18.2876 86.8468 18.3361 87.0172 18.3324C87.1875 18.3286 87.3526 18.2728 87.4903 18.1724C87.628 18.0721 87.7316 17.9319 87.7873 17.7709C87.8429 17.6099 87.848 17.4356 87.8016 17.2717L86.2775 11.9383L90.0575 8.53668C90.305 8.31334 90.3958 7.96501 90.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M114.289 7.64918C114.237 7.4949 114.14 7.35934 114.012 7.25923C113.883 7.15912 113.728 7.09884 113.566 7.08584L108.815 6.70834L106.759 2.15751C106.694 2.01094 106.587 1.88645 106.453 1.79906C106.318 1.71167 106.161 1.66513 106 1.66504C105.84 1.66495 105.683 1.71132 105.548 1.79856C105.413 1.8858 105.306 2.01018 105.241 2.15668L103.185 6.70834L98.4341 7.08584C98.2745 7.09849 98.1219 7.15685 97.9946 7.25395C97.8673 7.35105 97.7706 7.48278 97.7162 7.63337C97.6618 7.78396 97.6519 7.94704 97.6878 8.1031C97.7236 8.25916 97.8036 8.40158 97.9183 8.51334L101.429 11.9358L100.187 17.3125C100.15 17.4753 100.162 17.6456 100.222 17.8014C100.282 17.9572 100.388 18.0913 100.526 18.1862C100.663 18.2812 100.826 18.3326 100.993 18.3339C101.16 18.3352 101.324 18.2862 101.462 18.1933L106 15.1683L110.537 18.1933C110.679 18.2876 110.847 18.3361 111.017 18.3324C111.188 18.3286 111.353 18.2728 111.49 18.1724C111.628 18.0721 111.732 17.9319 111.787 17.7709C111.843 17.6099 111.848 17.4356 111.802 17.2717L110.277 11.9383L114.057 8.53668C114.305 8.31334 114.396 7.96501 114.289 7.64918V7.64918Z"
+											fill="#F1F4FA" />
+									</svg>
+								</div>
+								<div class="author">
+									<span class="name h5">Имя автора</span>
+									<span class="date h5">09.12.2021</span>
+								</div>
+								<div class="review">Александр Сергеевич - мастер в своём деле! Доброжелательность,
+									чуткость и профессионализм всего медперсонала вызывает чувство благодарности и
+									уважения! Спасибо за ваш труд!!!</div>
+								<div class="review-footer">
+									<a href="#" class="to-all-reviews">
+										Подробнее
+										<svg width="24" height="24">
+											<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="review__slide swiper-slide">
+								<div class="raiting">
+									<svg width="116" height="20" viewBox="0 0 116 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M18.2891 7.64918C18.2368 7.4949 18.1404 7.35934 18.0118 7.25923C17.8833 7.15912 17.7282 7.09884 17.5658 7.08584L12.815 6.70834L10.7591 2.15751C10.6937 2.01094 10.5872 1.88645 10.4525 1.79906C10.3179 1.71167 10.1608 1.66513 10.0003 1.66504C9.83972 1.66495 9.68259 1.71132 9.54784 1.79856C9.41308 1.8858 9.30645 2.01018 9.24081 2.15668L7.18498 6.70834L2.43415 7.08584C2.27453 7.09849 2.12193 7.15685 1.99461 7.25395C1.86729 7.35105 1.77064 7.48278 1.71623 7.63337C1.66181 7.78396 1.65193 7.94704 1.68777 8.1031C1.72361 8.25916 1.80365 8.40158 1.91831 8.51334L5.42915 11.9358L4.18748 17.3125C4.14978 17.4753 4.16186 17.6456 4.22216 17.8014C4.28247 17.9572 4.3882 18.0913 4.52565 18.1862C4.6631 18.2812 4.82591 18.3326 4.99297 18.3339C5.16002 18.3352 5.3236 18.2862 5.46248 18.1933L9.99998 15.1683L14.5375 18.1933C14.6794 18.2876 14.8468 18.3361 15.0172 18.3324C15.1875 18.3286 15.3526 18.2728 15.4903 18.1724C15.628 18.0721 15.7316 17.9319 15.7873 17.7709C15.8429 17.6099 15.848 17.4356 15.8016 17.2717L14.2775 11.9383L18.0575 8.53668C18.305 8.31334 18.3958 7.96501 18.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M42.2891 7.64918C42.2368 7.4949 42.1404 7.35934 42.0118 7.25923C41.8833 7.15912 41.7282 7.09884 41.5658 7.08584L36.815 6.70834L34.7591 2.15751C34.6937 2.01094 34.5872 1.88645 34.4525 1.79906C34.3179 1.71167 34.1608 1.66513 34.0003 1.66504C33.8397 1.66495 33.6826 1.71132 33.5478 1.79856C33.4131 1.8858 33.3064 2.01018 33.2408 2.15668L31.185 6.70834L26.4341 7.08584C26.2745 7.09849 26.1219 7.15685 25.9946 7.25395C25.8673 7.35105 25.7706 7.48278 25.7162 7.63337C25.6618 7.78396 25.6519 7.94704 25.6878 8.1031C25.7236 8.25916 25.8036 8.40158 25.9183 8.51334L29.4291 11.9358L28.1875 17.3125C28.1498 17.4753 28.1619 17.6456 28.2222 17.8014C28.2825 17.9572 28.3882 18.0913 28.5256 18.1862C28.6631 18.2812 28.8259 18.3326 28.993 18.3339C29.16 18.3352 29.3236 18.2862 29.4625 18.1933L34 15.1683L38.5375 18.1933C38.6794 18.2876 38.8468 18.3361 39.0172 18.3324C39.1875 18.3286 39.3526 18.2728 39.4903 18.1724C39.628 18.0721 39.7316 17.9319 39.7873 17.7709C39.8429 17.6099 39.848 17.4356 39.8016 17.2717L38.2775 11.9383L42.0575 8.53668C42.305 8.31334 42.3958 7.96501 42.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M66.2891 7.64918C66.2368 7.4949 66.1404 7.35934 66.0118 7.25923C65.8833 7.15912 65.7282 7.09884 65.5658 7.08584L60.815 6.70834L58.7591 2.15751C58.6937 2.01094 58.5872 1.88645 58.4525 1.79906C58.3179 1.71167 58.1608 1.66513 58.0003 1.66504C57.8397 1.66495 57.6826 1.71132 57.5478 1.79856C57.4131 1.8858 57.3064 2.01018 57.2408 2.15668L55.185 6.70834L50.4341 7.08584C50.2745 7.09849 50.1219 7.15685 49.9946 7.25395C49.8673 7.35105 49.7706 7.48278 49.7162 7.63337C49.6618 7.78396 49.6519 7.94704 49.6878 8.1031C49.7236 8.25916 49.8036 8.40158 49.9183 8.51334L53.4291 11.9358L52.1875 17.3125C52.1498 17.4753 52.1619 17.6456 52.2222 17.8014C52.2825 17.9572 52.3882 18.0913 52.5256 18.1862C52.6631 18.2812 52.8259 18.3326 52.993 18.3339C53.16 18.3352 53.3236 18.2862 53.4625 18.1933L58 15.1683L62.5375 18.1933C62.6794 18.2876 62.8468 18.3361 63.0172 18.3324C63.1875 18.3286 63.3526 18.2728 63.4903 18.1724C63.628 18.0721 63.7316 17.9319 63.7873 17.7709C63.8429 17.6099 63.848 17.4356 63.8016 17.2717L62.2775 11.9383L66.0575 8.53668C66.305 8.31334 66.3958 7.96501 66.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M90.2891 7.64918C90.2368 7.4949 90.1404 7.35934 90.0118 7.25923C89.8833 7.15912 89.7282 7.09884 89.5658 7.08584L84.815 6.70834L82.7591 2.15751C82.6937 2.01094 82.5872 1.88645 82.4525 1.79906C82.3179 1.71167 82.1608 1.66513 82.0003 1.66504C81.8397 1.66495 81.6826 1.71132 81.5478 1.79856C81.4131 1.8858 81.3064 2.01018 81.2408 2.15668L79.185 6.70834L74.4341 7.08584C74.2745 7.09849 74.1219 7.15685 73.9946 7.25395C73.8673 7.35105 73.7706 7.48278 73.7162 7.63337C73.6618 7.78396 73.6519 7.94704 73.6878 8.1031C73.7236 8.25916 73.8036 8.40158 73.9183 8.51334L77.4291 11.9358L76.1875 17.3125C76.1498 17.4753 76.1619 17.6456 76.2222 17.8014C76.2825 17.9572 76.3882 18.0913 76.5256 18.1862C76.6631 18.2812 76.8259 18.3326 76.993 18.3339C77.16 18.3352 77.3236 18.2862 77.4625 18.1933L82 15.1683L86.5375 18.1933C86.6794 18.2876 86.8468 18.3361 87.0172 18.3324C87.1875 18.3286 87.3526 18.2728 87.4903 18.1724C87.628 18.0721 87.7316 17.9319 87.7873 17.7709C87.8429 17.6099 87.848 17.4356 87.8016 17.2717L86.2775 11.9383L90.0575 8.53668C90.305 8.31334 90.3958 7.96501 90.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M114.289 7.64918C114.237 7.4949 114.14 7.35934 114.012 7.25923C113.883 7.15912 113.728 7.09884 113.566 7.08584L108.815 6.70834L106.759 2.15751C106.694 2.01094 106.587 1.88645 106.453 1.79906C106.318 1.71167 106.161 1.66513 106 1.66504C105.84 1.66495 105.683 1.71132 105.548 1.79856C105.413 1.8858 105.306 2.01018 105.241 2.15668L103.185 6.70834L98.4341 7.08584C98.2745 7.09849 98.1219 7.15685 97.9946 7.25395C97.8673 7.35105 97.7706 7.48278 97.7162 7.63337C97.6618 7.78396 97.6519 7.94704 97.6878 8.1031C97.7236 8.25916 97.8036 8.40158 97.9183 8.51334L101.429 11.9358L100.187 17.3125C100.15 17.4753 100.162 17.6456 100.222 17.8014C100.282 17.9572 100.388 18.0913 100.526 18.1862C100.663 18.2812 100.826 18.3326 100.993 18.3339C101.16 18.3352 101.324 18.2862 101.462 18.1933L106 15.1683L110.537 18.1933C110.679 18.2876 110.847 18.3361 111.017 18.3324C111.188 18.3286 111.353 18.2728 111.49 18.1724C111.628 18.0721 111.732 17.9319 111.787 17.7709C111.843 17.6099 111.848 17.4356 111.802 17.2717L110.277 11.9383L114.057 8.53668C114.305 8.31334 114.396 7.96501 114.289 7.64918V7.64918Z"
+											fill="#F1F4FA" />
+									</svg>
+								</div>
+								<div class="author">
+									<span class="name h5">Имя автора</span>
+									<span class="date h5">09.12.2021</span>
+								</div>
+								<div class="review">Много лет наблюдаюсь и решаю разные проблемы со здоровьем в вашей
+									клинике и вот решила написать свой отзыв.Благодарю невролога Бахареву Елену
+									Александровну за внимательное и чуткое... </div>
+								<div class="review-footer">
+									<a href="#" class="to-all-reviews">
+										Подробнее
+										<svg width="24" height="24">
+											<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<!-- Слайд -->
+							<div class="review__slide swiper-slide">
+								<div class="raiting">
+									<svg width="116" height="20" viewBox="0 0 116 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M18.2891 7.64918C18.2368 7.4949 18.1404 7.35934 18.0118 7.25923C17.8833 7.15912 17.7282 7.09884 17.5658 7.08584L12.815 6.70834L10.7591 2.15751C10.6937 2.01094 10.5872 1.88645 10.4525 1.79906C10.3179 1.71167 10.1608 1.66513 10.0003 1.66504C9.83972 1.66495 9.68259 1.71132 9.54784 1.79856C9.41308 1.8858 9.30645 2.01018 9.24081 2.15668L7.18498 6.70834L2.43415 7.08584C2.27453 7.09849 2.12193 7.15685 1.99461 7.25395C1.86729 7.35105 1.77064 7.48278 1.71623 7.63337C1.66181 7.78396 1.65193 7.94704 1.68777 8.1031C1.72361 8.25916 1.80365 8.40158 1.91831 8.51334L5.42915 11.9358L4.18748 17.3125C4.14978 17.4753 4.16186 17.6456 4.22216 17.8014C4.28247 17.9572 4.3882 18.0913 4.52565 18.1862C4.6631 18.2812 4.82591 18.3326 4.99297 18.3339C5.16002 18.3352 5.3236 18.2862 5.46248 18.1933L9.99998 15.1683L14.5375 18.1933C14.6794 18.2876 14.8468 18.3361 15.0172 18.3324C15.1875 18.3286 15.3526 18.2728 15.4903 18.1724C15.628 18.0721 15.7316 17.9319 15.7873 17.7709C15.8429 17.6099 15.848 17.4356 15.8016 17.2717L14.2775 11.9383L18.0575 8.53668C18.305 8.31334 18.3958 7.96501 18.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M42.2891 7.64918C42.2368 7.4949 42.1404 7.35934 42.0118 7.25923C41.8833 7.15912 41.7282 7.09884 41.5658 7.08584L36.815 6.70834L34.7591 2.15751C34.6937 2.01094 34.5872 1.88645 34.4525 1.79906C34.3179 1.71167 34.1608 1.66513 34.0003 1.66504C33.8397 1.66495 33.6826 1.71132 33.5478 1.79856C33.4131 1.8858 33.3064 2.01018 33.2408 2.15668L31.185 6.70834L26.4341 7.08584C26.2745 7.09849 26.1219 7.15685 25.9946 7.25395C25.8673 7.35105 25.7706 7.48278 25.7162 7.63337C25.6618 7.78396 25.6519 7.94704 25.6878 8.1031C25.7236 8.25916 25.8036 8.40158 25.9183 8.51334L29.4291 11.9358L28.1875 17.3125C28.1498 17.4753 28.1619 17.6456 28.2222 17.8014C28.2825 17.9572 28.3882 18.0913 28.5256 18.1862C28.6631 18.2812 28.8259 18.3326 28.993 18.3339C29.16 18.3352 29.3236 18.2862 29.4625 18.1933L34 15.1683L38.5375 18.1933C38.6794 18.2876 38.8468 18.3361 39.0172 18.3324C39.1875 18.3286 39.3526 18.2728 39.4903 18.1724C39.628 18.0721 39.7316 17.9319 39.7873 17.7709C39.8429 17.6099 39.848 17.4356 39.8016 17.2717L38.2775 11.9383L42.0575 8.53668C42.305 8.31334 42.3958 7.96501 42.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M66.2891 7.64918C66.2368 7.4949 66.1404 7.35934 66.0118 7.25923C65.8833 7.15912 65.7282 7.09884 65.5658 7.08584L60.815 6.70834L58.7591 2.15751C58.6937 2.01094 58.5872 1.88645 58.4525 1.79906C58.3179 1.71167 58.1608 1.66513 58.0003 1.66504C57.8397 1.66495 57.6826 1.71132 57.5478 1.79856C57.4131 1.8858 57.3064 2.01018 57.2408 2.15668L55.185 6.70834L50.4341 7.08584C50.2745 7.09849 50.1219 7.15685 49.9946 7.25395C49.8673 7.35105 49.7706 7.48278 49.7162 7.63337C49.6618 7.78396 49.6519 7.94704 49.6878 8.1031C49.7236 8.25916 49.8036 8.40158 49.9183 8.51334L53.4291 11.9358L52.1875 17.3125C52.1498 17.4753 52.1619 17.6456 52.2222 17.8014C52.2825 17.9572 52.3882 18.0913 52.5256 18.1862C52.6631 18.2812 52.8259 18.3326 52.993 18.3339C53.16 18.3352 53.3236 18.2862 53.4625 18.1933L58 15.1683L62.5375 18.1933C62.6794 18.2876 62.8468 18.3361 63.0172 18.3324C63.1875 18.3286 63.3526 18.2728 63.4903 18.1724C63.628 18.0721 63.7316 17.9319 63.7873 17.7709C63.8429 17.6099 63.848 17.4356 63.8016 17.2717L62.2775 11.9383L66.0575 8.53668C66.305 8.31334 66.3958 7.96501 66.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M90.2891 7.64918C90.2368 7.4949 90.1404 7.35934 90.0118 7.25923C89.8833 7.15912 89.7282 7.09884 89.5658 7.08584L84.815 6.70834L82.7591 2.15751C82.6937 2.01094 82.5872 1.88645 82.4525 1.79906C82.3179 1.71167 82.1608 1.66513 82.0003 1.66504C81.8397 1.66495 81.6826 1.71132 81.5478 1.79856C81.4131 1.8858 81.3064 2.01018 81.2408 2.15668L79.185 6.70834L74.4341 7.08584C74.2745 7.09849 74.1219 7.15685 73.9946 7.25395C73.8673 7.35105 73.7706 7.48278 73.7162 7.63337C73.6618 7.78396 73.6519 7.94704 73.6878 8.1031C73.7236 8.25916 73.8036 8.40158 73.9183 8.51334L77.4291 11.9358L76.1875 17.3125C76.1498 17.4753 76.1619 17.6456 76.2222 17.8014C76.2825 17.9572 76.3882 18.0913 76.5256 18.1862C76.6631 18.2812 76.8259 18.3326 76.993 18.3339C77.16 18.3352 77.3236 18.2862 77.4625 18.1933L82 15.1683L86.5375 18.1933C86.6794 18.2876 86.8468 18.3361 87.0172 18.3324C87.1875 18.3286 87.3526 18.2728 87.4903 18.1724C87.628 18.0721 87.7316 17.9319 87.7873 17.7709C87.8429 17.6099 87.848 17.4356 87.8016 17.2717L86.2775 11.9383L90.0575 8.53668C90.305 8.31334 90.3958 7.96501 90.2891 7.64918V7.64918Z"
+											fill="#FFAE59" />
+										<path
+											d="M114.289 7.64918C114.237 7.4949 114.14 7.35934 114.012 7.25923C113.883 7.15912 113.728 7.09884 113.566 7.08584L108.815 6.70834L106.759 2.15751C106.694 2.01094 106.587 1.88645 106.453 1.79906C106.318 1.71167 106.161 1.66513 106 1.66504C105.84 1.66495 105.683 1.71132 105.548 1.79856C105.413 1.8858 105.306 2.01018 105.241 2.15668L103.185 6.70834L98.4341 7.08584C98.2745 7.09849 98.1219 7.15685 97.9946 7.25395C97.8673 7.35105 97.7706 7.48278 97.7162 7.63337C97.6618 7.78396 97.6519 7.94704 97.6878 8.1031C97.7236 8.25916 97.8036 8.40158 97.9183 8.51334L101.429 11.9358L100.187 17.3125C100.15 17.4753 100.162 17.6456 100.222 17.8014C100.282 17.9572 100.388 18.0913 100.526 18.1862C100.663 18.2812 100.826 18.3326 100.993 18.3339C101.16 18.3352 101.324 18.2862 101.462 18.1933L106 15.1683L110.537 18.1933C110.679 18.2876 110.847 18.3361 111.017 18.3324C111.188 18.3286 111.353 18.2728 111.49 18.1724C111.628 18.0721 111.732 17.9319 111.787 17.7709C111.843 17.6099 111.848 17.4356 111.802 17.2717L110.277 11.9383L114.057 8.53668C114.305 8.31334 114.396 7.96501 114.289 7.64918V7.64918Z"
+											fill="#F1F4FA" />
+									</svg>
+								</div>
+								<div class="author">
+									<span class="name h5">Имя автора</span>
+									<span class="date h5">09.12.2021</span>
+								</div>
+								<div class="review">Александр Сергеевич - мастер в своём деле! Доброжелательность,
+									чуткость и профессионализм всего медперсонала вызывает чувство благодарности и
+									уважения! Спасибо за ваш труд!!!</div>
+								<div class="review-footer">
+									<a href="#" class="to-all-reviews">
+										Подробнее
+										<svg width="24" height="24">
+											<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination"></div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-prev carousel-prev">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-left"></use>
+							</svg>
+						</button>
+						<button type="button" class="swiper-button-next carousel-next">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+							</svg>
+						</button>
+						<a href="#" class="button btn-white">Все отзывы</a>
+					</div>
+					<a href="#" class="button btn-aquamarine btn-100" data-popup="#popup__review">Оставить отзыв</a>
+				</div>
+			</div>
+		</section>
+		<section class="page news articles">
+			<div class="news__container">
+				<div class="news__inner">
+					<div data-tabs class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">Новости</button>
+							<button type="button" class="tabs__title">Cтатьи</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__inner">
+									<div class="media-wrapper">
+										<div class="media x2">
+											<div class="media-image">
+												<div class="media-image-wrapper">
+													<div class="media-image-content">
+														<a href="#"><img data-src="@img/news1.jpg" alt=""></a>
+													</div>
+												</div>
+											</div>
+											<div class="media-body">
+												<a href="#" class="news-title">
+													<h4>Акция к Новому году !</h4>
+												</a>
+												<span class="date text2">09.12.2021</span>
+												<p class="text3">Медицинский центр КИМ (ООО "Спектр)" поздравляет всех с
+													наступающим
+													Новым Годом!
+													И дарит всем посетителям скидку в размере 20% на первичную
+													консультацию
+													всех
+													специалистов м/ц КИМ (ООО "Спектр").</p>
+											</div>
+										</div>
+										<div class="media">
+											<div class="media-image">
+												<div class="media-image-wrapper">
+													<div class="media-image-content">
+														<a href="#"><img data-src="@img/news2.jpg" alt=""></a>
+													</div>
+												</div>
+											</div>
+											<div class="media-body">
+												<a href="#" class="news-title">
+													<h4>Акция к Новому году !</h4>
+												</a>
+												<span class="date text2">09.12.2021</span>
+												<p class="text3">Медицинский центр КИМ (ООО "Спектр)" поздравляет всех с
+													наступающим Новым Годом!</p>
+											</div>
+										</div>
+										<div class="media">
+											<div class="media-image">
+												<div class="media-image-wrapper">
+													<div class="media-image-content">
+														<a href="#"><img data-src="@img/news3.jpg" alt=""></a>
+													</div>
+												</div>
+											</div>
+											<div class="media-body">
+												<a href="#" class="news-title">
+													<h4>Акция к Новому году !</h4>
+												</a>
+												<span class="date text2">09.12.2021</span>
+												<p class="text3">Медицинский центр КИМ (ООО "Спектр)" поздравляет всех с
+													наступающим Новым Годом!</p>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="button btn-white to-all-news">Все новости</a>
+
+								</div>
+
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__inner">
+									<div class="media-wrapper">
+										<div class="media x2">
+											<div class="media-image">
+												<div class="media-image-wrapper">
+													<div class="media-image-content">
+														<a href="#"><img data-src="@img/news1.jpg" alt=""></a>
+													</div>
+												</div>
+											</div>
+											<div class="media-body">
+												<a href="#" class="news-title">
+													<h4>Акция к Новому году !</h4>
+												</a>
+												<span class="date text2">09.12.2021</span>
+												<p class="text3">Медицинский центр КИМ (ООО "Спектр)" поздравляет всех с
+													наступающим
+													Новым Годом!
+													И дарит всем посетителям скидку в размере 20% на первичную
+													консультацию
+													всех
+													специалистов м/ц КИМ (ООО "Спектр").</p>
+											</div>
+										</div>
+										<div class="media">
+											<div class="media-image">
+												<div class="media-image-wrapper">
+													<div class="media-image-content">
+														<a href="#"><img data-src="@img/news2.jpg" alt=""></a>
+													</div>
+												</div>
+											</div>
+											<div class="media-body">
+												<a href="#" class="news-title">
+													<h4>Акция к Новому году !</h4>
+												</a>
+												<span class="date text2">09.12.2021</span>
+												<p class="text3">Медицинский центр КИМ (ООО "Спектр)" поздравляет всех с
+													наступающим Новым Годом!</p>
+											</div>
+										</div>
+										<div class="media">
+											<div class="media-image">
+												<div class="media-image-wrapper">
+													<div class="media-image-content">
+														<a href="#"><img data-src="@img/news3.jpg" alt=""></a>
+													</div>
+												</div>
+											</div>
+											<div class="media-body">
+												<a href="#" class="news-title">
+													<h4>Акция к Новому году !</h4>
+												</a>
+												<span class="date text2">09.12.2021</span>
+												<p class="text3">Медицинский центр КИМ (ООО "Спектр)" поздравляет всех с
+													наступающим Новым Годом!</p>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="button btn-white to-all-articles">Все статьи</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page banner2">
+			<div class="banner2__container">
+				<div class="banner2__content">
+					<div class="parts">
+						<div class="part1">Остались вопросы?</div>
+						<div class="part2">
+							<a href="#" class="button btn-white" data-popup="#popup__wrote__us">Напишите нам</a>
+							<div class="part3">
+								или позвоните <br>
+								<a href="tel:+78432270001" class="banner-phone">+7 (8432) 270-001</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="page partners">
+			<div class="partner__container">
+				<div class="partner__inner">
+					<h1>Наши партнеры</h1>
+					<!-- Оболочка слайдера -->
+					<div class="partner__slider swiper">
+
+						<!-- Двигающееся часть слайдера -->
+						<div class="partner__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="partner__slide swiper-slide">
+								<img src="@img/kim.png" alt="Медицинский центр КИМ">
+							</div>
+							<div class="partner__slide swiper-slide">
+								<img src="@img/cs.png" alt="Центр стоматологии">
+							</div>
+							<div class="partner__slide swiper-slide">
+								<img src="@img/1fbc.png" alt="Первый флебологический центр">
+							</div>
+							<div class="partner__slide swiper-slide">
+								<img src="@img/plastica2.png" alt="Институт пластической хирургии и косметологии">
+							</div>
+						</div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-prev">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-left"></use>
+							</svg>
+						</button>
+						<button type="button" class="swiper-button-next">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="page licenses">
+			<div class="license__container">
+				<div class="license__inner">
+					<h1>Наши партнеры</h1>
+					<!-- Оболочка слайдера -->
+					<div class="license__slider swiper">
+
+						<!-- Двигающееся часть слайдера -->
+						<div class="license__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="license__slide swiper-slide">
+								<img src="@img/license.jpg" alt="">
+							</div>
+							<div class="license__slide swiper-slide">
+								<img src="@img/license.jpg" alt="">
+							</div>
+							<div class="license__slide swiper-slide">
+								<img src="@img/license.jpg" alt="">
+							</div>
+							<div class="license__slide swiper-slide">
+								<img src="@img/license.jpg" alt="">
+							</div>
+							<div class="license__slide swiper-slide">
+								<img src="@img/license.jpg" alt="">
+							</div>
+							<div class="license__slide swiper-slide">
+								<img src="@img/license.jpg" alt="">
+							</div>
+						</div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-prev">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-left"></use>
+							</svg>
+						</button>
+						<button type="button" class="swiper-button-next">
+							<svg width="24" height="24">
+								<use xlink:href="@img/icons/icons.svg#svg-c-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</div>
+	@@include('html/_footer.htm',{})
 	</div>
 	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})

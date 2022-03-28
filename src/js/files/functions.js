@@ -1,5 +1,4 @@
 // Подключение списка активных модулей
-import { info } from "sass";
 import { flsModules } from "./modules.js";
 
 /* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
@@ -406,43 +405,6 @@ export function tabs() {
 		}
 	}
 }
-//Кнопка открытия и закрытия окна поиска =======================================================================================================================================================================================================================
-/*
-*/
-export function searchClose() {
-	/*
-	if (document.querySelector(".cancel__icon")) {
-		//console.info(document.querySelector(".cancel__icon"));
-		document.addEventListener("click", function (e) {
-			e.stopPropagation();
-			let headerBootomRoot = e.target.closest('.header__bottom');
-			console.log("BBBBBBB");
-			console.log(headerBootomRoot);
-			console.log(e.currentTarget)
-			console.log(headerBootomRoot.classList.contains("search-open"));
-			if (headerBootomRoot && headerBootomRoot.classList.contains("search-open")) {
-				headerBootomRoot.classList.remove("search-open");
-			}
-			console.log(headerBootomRoot.classList.contains("search-open"));
-			//e.stopImmediatePropagation();
-			return false;
-		});
-	};
-*/
-}
-export function searchOpen() {
-	/*
-	if (document.querySelector(".icon-search")) {
-		//console.info(document.querySelector(".icon-search"))
-		document.addEventListener("click", function (e) {
-			let headerBootomRoot = e.target.closest('.header__bottom');
-			var elementClasses = headerBootomRoot.classList;
-			if (elementClasses.length && !(elementClasses.contains("search-open"))) elementClasses.add("search-open");
-		});
-	};
-	*/
-}
-
 // Модуль работы с меню (бургер) =======================================================================================================================================================================================================================
 /*
 Документация по работе в шаблоне: https://template.fls.guru/template-docs/menu-burger.html
@@ -466,6 +428,24 @@ export function menuClose() {
 	bodyUnlock();
 	document.documentElement.classList.remove("menu-open");
 }
+/*
+if (isMobile.any()) {
+	document.body.classList.add('_touch');
+
+	let menuArrows = document.querySelectorAll('.menu__arrow');
+	if (menuArrows.length > 0) {
+		for (let index = 0; index < menuArrows.length; index++) {
+			const menuArrow = menuArrows[index];
+			menuArrow.addEventListener("click", function (e) {
+				menuArrow.parentElement.classList.toggle('_active');
+			});
+		}
+	}
+
+} else {
+	document.body.classList.add('_pc');
+}
+*/
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*
 Документация по работе в шаблоне: https://template.fls.guru/template-docs/modul-pokazat-eshhjo.html

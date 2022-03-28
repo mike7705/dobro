@@ -1,7 +1,7 @@
 //====================================================================================================
 .header {
 }
-@media (max-width: $mobile) {
+@media (max-width: em(767.98)) {
 	.header__top {
 		display: none;
 	}
@@ -142,13 +142,28 @@
 		}
 	}
 }
-
+@media (max-width: em(479.98)) {
+	.header__search {
+		width: 100vw;
+		height: 80px !important;
+		background-color: #fff;
+		position: absolute;
+		z-index: 88;
+		top: -200%;
+		//transform: top .3s ease 0s;
+	}
+	.search._mobile_search form.header__search {
+		display: block;
+		top: 0;
+		transform: top 0.3s ease 0s;
+	}
+}
 //====================================================================================================
 
 //Burger
 .icon-menu {
 	display: none;
-	@media (max-width: $mobile) {
+	@media (max-width: em(767.98)) {
 		display: block;
 		position: relative;
 		width: rem(30);
@@ -188,8 +203,12 @@
 			}
 			&::after {
 				bottom: calc(50% - rem(1));
+
 				transform: rotate(45deg);
 			}
+		}
+		.menu__body {
+			background-color: #fff;
 		}
 	}
 }
@@ -200,6 +219,28 @@
 }
 .menu__icon {
 	display: none;
+}
+
+.social-mobile,
+.working-time-mobile,
+.location-mobile {
+	margin-top: 25px;
+	display: none;
+}
+.social-mobile svg {
+	margin-right: 15px;
+}
+.menu-open {
+	.social-mobile,
+	.working-time-mobile,
+	.location-mobile {
+		display: block;
+		color: #65728b;
+		fill: #65728b;
+		svg {
+			padding-top: 5px;
+		}
+	}
 }
 .menu__body {
 }
@@ -213,8 +254,11 @@
 	margin-left: 0;
 }
 .menu__link {
-	//color: #fff;
-	//font-size: 18px;
+	color: #000;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 28px;
 }
 .menu__link:hover {
 	text-decoration: underline;
@@ -229,6 +273,8 @@
 	border-radius: 8px;
 	box-shadow: 0px 7px 5px rgba(101, 114, 139, 0.2);
 	z-index: 5;
+	opacity: 0;
+	visibility: hidden;
 }
 /*
 .menu__list li:last-child .menu__sub-list {
@@ -253,41 +299,80 @@
 	text-decoration: none;
 	color: #0d0d5d;
 }
+/*
 .menu__arrow {
-	display: none;
+	display: block;
+	width: 12px;
+	height: 12px;
+	overflow: hidden;
+	position: relative;
+	//right: 6px;
+	//float: left;
+}
+.menu__arrow::after,
+.menu__arrow::before {
+	content: "";
+	width: 1%;
+	height: 100%;
+	position: absolute;
+	display: block;
+	bottom: -6px;
+	background-color: #000;
+}
+.menu__arrow::after {
+	transform: rotate(46deg);
+	left: 6px;
+}
+.menu__arrow::before {
+	transform: rotate(-46deg);
+	left: 6px;
 }
 /* ----------------------- */
-body._pc .menu__list > li:hover .menu__sub-list {
+.menu__list > li:hover .menu__sub-list {
 	opacity: 1;
 	visibility: visible;
 	transform: translate(0px, 0px);
 	pointer-events: all;
 }
-body._touch .menu__list > li {
+.menu-open .menu__list > li {
 	display: flex;
 	align-items: center;
 }
-body._touch .menu__link {
+.menu-open .menu__link {
 	flex: 1 1 auto;
 }
-body._touch .menu__arrow {
+.menu-open .menu__arrow {
 	display: block;
-	width: 0;
-	height: 0;
+	width: 6px;
+	height: 6px;
 	margin: 0px 0px 0px 5px;
 	transition: transform 0.3s ease 0s;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid #fff;
+	transform: rotate(-45deg);
+	border-left: 2px solid #000;
+	border-bottom: 2px solid #000;
+	//border-top: 10px solid #000;
+	cursor: pointer;
 }
-body._touch .menu__list > li._active .menu__sub-list {
+.menu-open .menu__list > li._active .menu__sub-list {
 	opacity: 1;
 	visibility: visible;
 	transform: translate(0px, 0px);
 	pointer-events: all;
+	padding: 0;
+	box-shadow: none;
 }
-body._touch .menu__list > li._active .menu__arrow {
-	transform: rotate(-180deg);
+.menu-open .menu__list > li._active .menu__sub-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #65728b;
+}
+.menu-open .menu__list > li._active .menu__sub-list .menu__sub-link:hover {
+	text-decoration: none;
+	color: #0d0d5d;
+}
+.menu-open .menu__list > li._active .menu__arrow {
+	transform: rotate(-225deg);
 }
 .logo {
 	order: 1;
@@ -314,6 +399,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 .header__menu {
 	order: 8;
+	z-index: 2;
 }
 .header__search {
 	order: 9;
@@ -331,7 +417,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	order: 10;
 	flex: 1 1 20px;
 }
-@media (max-width: $mobile) {
+@media (max-width: em(767.98)) {
 	.header__bottom {
 		.header__wrapper {
 			justify-content: start;
@@ -388,13 +474,13 @@ body._touch .menu__list > li._active .menu__arrow {
 	}
 }
 
-@media (min-width: $tablet) and (max-width: $pc) {
+@media (min-width: em(991.98)) and (max-width: $pc) {
 	.spacer-1,
 	.spacer-2 {
 		display: none;
 	}
 }
-@media (min-width: $mobile) and (max-width: $tablet) {
+@media (min-width: em(767.98)) and (max-width: em(991.98)) {
 	.header__wrapper {
 		.appointment,
 		.schedule,
@@ -449,7 +535,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 /* ----------------------- */
-@media (min-width: $mobile) {
+@media (min-width: em(767.98)) {
 	.menu__list {
 		display: flex;
 		align-items: center;
@@ -466,7 +552,7 @@ body._touch .menu__list > li._active .menu__arrow {
 		transition: all 0.3s ease 0s;
 	}
 }
-@media (max-width: $mobile) {
+@media (max-width: em(767.98)) {
 	.header__top {
 		display: none;
 	}
@@ -514,6 +600,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	.menu__icon span {
 		top: 50%;
 		transform: scale(1) translate(0px, -50%);
+		//left: 1px;
 	}
 	.menu-open .menu__icon span {
 		transform: scale(0) translate(0px, -50%);
@@ -524,7 +611,7 @@ body._touch .menu__list > li._active .menu__arrow {
 		left: -100%;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: #fff;
 		padding: 100px 30px 30px 30px;
 		transition: left 0.3s ease 0s;
 		overflow: auto;
@@ -646,17 +733,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	.header-phone {
 		order: 16;
 	}
-	.menu__body::before {
-		content: "";
-		position: fixed;
-		width: 100%;
-		top: 0;
-		left: 0;
-		height: 70px;
-		border-color: #912105;
-		z-index: 2;
-		background-color: rgba(255, 255, 255, 1);
-	}
+
 	.menu__list > li {
 		flex-wrap: wrap;
 		margin: 0px 0px 30px 0px;
@@ -682,5 +759,8 @@ body._touch .menu__list > li._active .menu__arrow {
 		color: #000;
 	}
 }
-
+.popup .mobile__search > .search-button {
+	margin-top: 0;
+	margin-bottom: 0;
+}
 //* ===================================================

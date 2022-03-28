@@ -1,3 +1,270 @@
 //====================================================================================================
+.footer {
+    background-color: #65728b;
+    position: relative;
+}
+.footer__container {
+}
+.footer__inner {
+    padding-top: 35px;
+    padding-bottom: 60px;
+    width: 60%;
+}
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    justify-content: stretch;
+    row-gap: 10px;
+}
+.footer-phone.rec {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.footer-phone.work {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.footer-address,
+.footer-working-time {
+    padding-right: 10px;
+    display: flex;
+    align-items: flex-start;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    hyphens: auto;
+    word-wrap: break-word;
+    svg {
+        fill: #c3cfdd;
+        margin-right: 5px;
+    }
+}
+.footer-address {
+}
+.footer-working-time {
+    align-items: flex-start;
+    span {
+        color: #c3cfdd;
+    }
+    p {
+        line-height: 24px;
+    }
+}
+.footer-rights {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    color: #c3cfdd;
+    display: block;
+    grid-column: 1 / 3;
+    padding-top: 30px;
+}
+.footer-map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 60%;
+}
+.map {
+    mix-blend-mode: soft-light;
+}
+.footer-info {
+    position: relative;
+    width: 100%;
+    .button {
+        max-width: 195px;
+        margin-right: 0;
+    }
+}
 
+.footer-logo {
+    margin-bottom: 30px;
+}
+.button {
+}
+
+.footer-menu {
+    display: block;
+    max-width: 100%;
+    grid-row: 4 / 6;
+    & > li {
+        width: 50%;
+        float: left;
+        a {
+            font-size: 16px;
+            line-height: 28px;
+            color: #ffffff;
+        }
+    }
+    & > li:nth-child(2n + 1) {
+        //clear: both;
+    }
+}
+
+.footer-social {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-top: 15px;
+    //margin-bottom: 45px;
+    a.button {
+        margin-right: 10px;
+    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    li {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+.footer-phone {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c3cfdd;
+
+    a {
+        width: 100%;
+        font-size: 24px;
+        line-height: 28px;
+        color: #ffffff;
+    }
+    @media (max-width: $tablet) {
+        a {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    a:hover {
+        color: inherit;
+    }
+}
+
+@media (max-width: $mobile) {
+    .footer,
+    .footer__container,
+    .footer__inner {
+        height: auto;
+    }
+    .footer__inner {
+        width: 100%;
+    }
+    .footer {
+        position: relative;
+    }
+    .footer__container {
+        padding-top: 200px;
+    }
+    .footer-map {
+        position: absolute;
+        top: 0;
+        height: 185px;
+        right: 0;
+        left: 0;
+    }
+    .footer-logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .footer-phone.rec {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .footer-appointment {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .footer-calling-doctor {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .footer-menu {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-social {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        justify-items: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-address {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+    .footer-working-time {
+        grid-column: 1 / 3;
+        grid-row: 6 / 7;
+    }
+    .footer-phone.work {
+        grid-column: 1 / 3;
+        grid-row: 7 / 8;
+    }
+    .footer-info {
+    }
+}
+@media (max-width: $mobileSmall) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        & > ul,
+        & > div {
+            margin-bottom: 15px;
+        }
+    }
+    .footer-logo {
+        grid-row: 1 / 2;
+    }
+    .footer-phone.rec {
+        grid-row: 2 / 3;
+    }
+    .footer-appointment {
+        grid-row: 3 / 4;
+    }
+    .footer-calling-doctor {
+        grid-row: 4 / 5;
+    }
+    .footer-menu {
+        grid-row: 5 / 6;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        & > li a {
+            display: block;
+            width: max-content;
+        }
+    }
+    .footer-social {
+        grid-row: 6 / 7;
+        justify-items: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-address {
+        grid-row: 7 / 8;
+    }
+    .footer-working-time {
+        grid-row: 8 / 9;
+    }
+    .footer-phone.work {
+        grid-row: 9 / 10;
+    }
+}
 //====================================================================================================

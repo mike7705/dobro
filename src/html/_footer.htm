@@ -1,4 +1,102 @@
 <footer class="footer">
 	<div class="footer__container">
+		<div class="footer__inner">
+			<div class="footer-info">
+				<div class="footer-logo">
+					<img src="@img/logo-footer.svg" alt="">
+				</div>
+				<div class="footer-appointment"><a href="#" class="button btn-aquamarine btn-100"
+						data-popup="#popup__appointment">Записаться на
+						прием</a></div>
+				<div class="footer-calling-doctor"><a href="#" class="button btn-midnightblue btn-100"
+						data-popup="#popup__calling__doctor">Вызов врача на
+						дом</a></div>
+				<ul class="footer-menu">
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Врачи</a></li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">Акции</a></li>
+
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">О клинике</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="footer-social">
+					<li>
+						<a href="#"><svg width="37" height="37">
+								<use xlink:href="@img/icons/icons.svg#svg-vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="37" height="37">
+								<use xlink:href="@img/icons/icons.svg#svg-ok"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="37" height="37">
+								<use xlink:href="@img/icons/icons.svg#svg-whatsapp"></use>
+							</svg>
+						</a>
+					</li>
+					<!--
+					<li>
+						<a href="#">
+							<svg width="37" height="37">
+								<use xlink:href="@img/icons/icons.svg#svg-instagram"></use>
+							</svg>
+						</a>
+					</li>-->
+				</ul>
+				<div class="footer-phone rec">
+					Запись по телефону: <br>
+					<a href="tel:+78432270001">+7 (8432) 27-00-01</a>
+				</div>
+				<div class="footer-phone work">
+					Бухгалтерия: <br>
+					<a href="tel:+78432272165">+7 (8432) 27-21-65</a>
+				</div>
+				<div class="footer-address">
+					<svg width="20" height="20">
+						<use xlink:href="@img/icons/icons.svg#svg-location"></use>
+					</svg>
+					<p>г. Саранск, ул. Васенко, д.11, пом.17</p>
+				</div>
+				<div class="footer-working-time">
+					<svg width="20" height="20">
+						<use xlink:href="@img/icons/icons.svg#svg-clock"></use>
+					</svg>
+					<p>
+						<span>ПН - ПТ &nbsp; </span>8:00 - 20:00
+						<span>СБ &nbsp; </span> 8:00 - 14:00 <span>Вс</span> выходной
+					</p>
+
+				</div>
+				<p class="footer-rights">© 2021 Все права защищены.</p>
+			</div>
+			<div class="footer-map map" id="map"></div>
+		</div>
 	</div>
 </footer>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=f66106ae-d142-483a-8ae9-980aafe77a6a&load=Map&lang=ru_RU"
+	type="text/javascript"></script>
+<script type="text/javascript">
+	ymaps.ready(function () {
+		var map = new ymaps.Map("map", {
+			center: [54.195221, 45.169142],
+			zoom: 19.33
+		});
+
+		if (map) {
+			ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+				var placemark = new Placemark([54.195221, 45.169142]);
+			});
+			//map.geoObjects.add(placemark);
+		}
+	});
+
+</script>

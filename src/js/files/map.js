@@ -1,4 +1,4 @@
-
+/*
 function mapAdd() {
 	let tag = document.createElement('script');
 	tag.src = "https://maps.google.com/maps/api/js?sensor=false&amp;key=&callback=mapInit";
@@ -78,9 +78,11 @@ function mapInit(n = 1) {
 if (document.querySelector('#map')) {
 	mapAdd();
 }
+*/
+//f66106ae-d142-483a-8ae9-980aafe77a6a
 
-
-/* YA
+//https://api-maps.yandex.ru/2.1?apikey=ваш API-ключ&lang=ru_RU
+/*
 function map(n) {
 	ymaps.ready(init);
 	function init() {
@@ -91,23 +93,21 @@ function map(n) {
 			// Чтобы не определять координаты центра карты вручную,
 			// воспользуйтесь инструментом Определение координат.
 			controls: [],
-			center: [43.585525, 39.723062],
+			center: [54.195171, 45.169143],
 			// Уровень масштабирования. Допустимые значения:
 			// от 0 (весь мир) до 19.
 			zoom: 10
 		});
 
-		let myPlacemark = new ymaps.Placemark([43.585525, 39.723062], {
-		},{
+		let myPlacemark = new ymaps.Placemark([54.195171, 45.169143], {
+		}, {
 			// Опции.
-			//balloonContentHeader: 'Mistoun',
-			//balloonContentBody: 'Москва, Николоямская 40с1',
-			//balloonContentFooter: '+ 7(495) 507-54 - 90',
-			//hasBalloon: true,
-			//hideIconOnBalloonOpen: true,
-
-			hasBalloon: false,
+			balloonContentHeader: 'Клиника Добро',
+			balloonContentBody: 'Саранск, ул. Васенко, д.11, пом. 17',
+			balloonContentFooter: '+7 (8342) 27-00-01',
+			hasBalloon: true,
 			hideIconOnBalloonOpen: false,
+
 			// Необходимо указать данный тип макета.
 			iconLayout: 'default#imageWithContent',
 			// Своё изображение иконки метки.
@@ -125,5 +125,8 @@ function map(n) {
 		myMap.behaviors.disable('scrollZoom');
 		myMap.behaviors.disable('drag');
 	}
+}
+if (document.querySelector('#map')) {
+	map();
 }
 */
