@@ -411,10 +411,34 @@
 }
 //*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.doctors__content .rows {
-    @include gridCards;
+.doctors__content .rows, .resource__content.promo .rows {
+    @include gridCards(fit,220px,280px,20px);
     margin-bottom: 40px;
 }
+.resource__content.promo {
+    background-color: #fff;
+    & .rows {
+    & .promo__slide{
+        & .promo-date{
+            padding-top: 5px;
+        }
+        & .promo-header{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #0D0D5D;
+        }
+        & p.text2{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #0D0D5D;
+        }
+    }
+}
+}
+
+
 #pdopage {
     .rows {
         .promo__slide {

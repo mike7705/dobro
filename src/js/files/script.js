@@ -84,3 +84,29 @@ if (openedParents.length > 0) {
         }
     })
 }
+$(document).on('change', '#filters input', function () {
+    if (typeof (pdoPage) == 'undefined') return;
+
+    var fields = {};
+    $.each($('#filters').serializeArray(), function () {
+        if (this.name.indexOf('[]') <= 0) {
+            fields[this.name] = this.value;
+        } else {
+            // Для чекбоксов посложнее
+            var name = this.name.replace('[]', '');
+            if (typeof (fields[name]) == 'undefined') {
+                fields[name] = [];
+            }
+            fields[name].push(this.value);
+        }
+    });
+    $.post(document.location.href, {
+        action: 'filter',
+        fields: fields,
+        hash: pdoPage.configs.page.hash
+    }, function (data) {
+        var tmp = document.location.href.split('?');
+        pdoPage.keys.page = 0;
+        pdoPage.loadPage(tmp[0], pdoPage.configs.page);
+    });
+});
