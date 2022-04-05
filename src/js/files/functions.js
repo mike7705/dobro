@@ -239,6 +239,7 @@ export function spollers() {
 				const spollerTitle = el.closest('[data-spoller]');
 				const spollersBlock = spollerTitle.closest('[data-spollers]');
 				const oneSpoller = spollersBlock.hasAttribute('data-one-spoller');
+				const followLink = spollersBlock.hasAttribute('data-follow-spoller');
 				const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
 				if (!spollersBlock.querySelectorAll('._slide').length) {
 					if (oneSpoller && !spollerTitle.classList.contains('_spoller-active')) {
@@ -247,7 +248,7 @@ export function spollers() {
 					spollerTitle.classList.toggle('_spoller-active');
 					_slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
 				}
-				e.preventDefault();
+				if (!(followLink)) e.preventDefault();
 			}
 		}
 		function hideSpollersBody(spollersBlock) {

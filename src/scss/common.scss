@@ -41,16 +41,16 @@ h6,
     line-height: em(20);
 }
 .text1 {
-    font-size: em(16);
-    line-height: em(28);
+    font-size: em(16) !important;
+    line-height: em(28) !important;
 }
 .text2 {
-    font-size: em(14);
-    line-height: em(24);
+    font-size: em(14) !important;
+    line-height: em(24) !important;
 }
 .text3 {
-    font-size: em(12);
-    line-height: em(18);
+    font-size: em(12) !important;
+    line-height: em(18) !important;
 }
 a:hover {
     text-decoration-line: underline;
@@ -162,6 +162,9 @@ a:hover {
 }
 .text-aqua {
     color: #0d0d5d;
+}
+.d-flex{
+    display: flex;
 }
 //*** BREADCRUMBS -------------------------
 

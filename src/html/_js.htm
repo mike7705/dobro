@@ -1,1 +1,49 @@
 <script src="js/app.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=f66106ae-d142-483a-8ae9-980aafe77a6a"
+    type="text/javascript"></script>
+<script type="text/javascript">
+    ymaps.ready(function () {
+        var map = new ymaps.Map("map", {
+            center: [54.195221, 45.169142],
+            zoom: 19.33
+        });
+
+        if (map) {
+            var myPlacemark = new ymaps.Placemark([54.195221, 45.169142], {
+                hintContent: 'Клиника "ДОБРО"',
+                balloonContent: 'Центр психического здоровья "ДОБРО"'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                iconContent: 'Клиника "Добро"',
+            })
+            map.geoObjects.add(myPlacemark);
+        }
+        if (document.getElementById("map2") !== null) {
+            var map2 = new ymaps.Map("map2", {
+                center: [54.195221, 45.169142],
+                zoom: 19
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+            myGeoObject = new ymaps.GeoObject({
+                geometry: {
+                    type: "Point",
+                    coordinates: [54.195220612989495, 45.16914299999996]
+                },
+                // Свойства.
+                properties: {
+                    // Контент метки.
+                    iconContent: 'Клиника "Добро"',
+                    hintContent: 'Центр психического здоровья "ДОБРО"'
+                }
+            }, {
+                // Опции.
+                // Иконка метки будет растягиваться под размер ее содержимого.
+                preset: 'islands#blackStretchyIcon',
+            });
+            map2.geoObjects.add(myGeoObject)
+        }
+    });
+</script>

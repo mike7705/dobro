@@ -76,7 +76,7 @@ import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы */
 /* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formFieldsInit({ viewPass: false });
+flsForms.formFieldsInit({ viewPass: false });
 
 /* Oтправка формы */
 /* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
@@ -86,7 +86,7 @@ import * as flsForms from "./files/forms/forms.js";
 // flsForms.formQuantity();
 
 /* Модуль звездного рейтинга */
-flsForms.formRating();
+// flsForms.formRating();
 
 /* Модуль работы с select. */
 // import './libs/select.js'
